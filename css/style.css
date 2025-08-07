@@ -121,9 +121,21 @@ footer{
 }
 
 @media only screen and (min-width: 600px) {
+    :root{
+        & h2{
+        text-align: left;
+        padding: 4vw 0 0;
+    }
+    }
     header{
+        padding: 0 10vw 0;
         display: flex;
         justify-content: right;
+        & ul{
+            & li{
+                margin: clamp(10px, 2vw, 30px);
+            }
+        }
     }
     section.banner{
         display: flex;
@@ -131,28 +143,40 @@ footer{
         text-align: left;
         max-width: 1700px;
         margin: 60px auto;
-        padding: 0;
+        padding: 0 10vw 0;
         & div.esquerda{
-            width: 40vw;
+            width: 80vw;
             & img{
                 width: 100%;
             }
         }
     }
     section.recent{
+        padding: 0 10vw 0;
         & ul{
             display: flex;
             justify-content: left;
-            max-width: 1700px;
+            width: 100%;
             margin: 0 auto;
+            & li{
+                margin-top: 2vw;
+            }
         }
     }
     section.featured-works{
+        padding: 0 10vw 0;
         & ul{
             display: flex;
             justify-content: left;
             max-width: 1700px;
             margin: 0 auto;
+            & li{
+                border: none;
+                margin-top: 2vw ;
+            }
         }
+    }
+    footer{
+        margin-bottom: 2rem;
     }
 } 
